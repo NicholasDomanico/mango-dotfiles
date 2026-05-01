@@ -1,0 +1,200 @@
+@import "/home/nicholas/.cache/wal/colors-waybar.css";
+* {
+    font-size: 13px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    padding: 0;
+    margin-right: 3px;
+}
+
+window#waybar {
+    background: @background;
+    color: #fdf6e3;
+}
+
+menu {
+    background: #1a1a1a;
+    color: @color3;
+    border: none;
+}
+
+menuitem {
+    color: @color6;
+}
+
+menuitem:hover {
+    color: @color5;
+    border-color: @color5;
+    background: @background;
+}
+
+tooltip {
+    background: @background;
+    color: @color3;
+}
+
+#workspaces,
+#clock.1,
+#clock.2,
+#clock.3,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#bluetooth,
+#disk,
+#tray,
+#custom-power,
+#power-profiles-daemon,
+#cava,
+#network,
+#custom-mediaplayer,
+#image,
+#mpris {
+    margin-bottom: 0px;
+}
+#tags {
+    background: @background;
+}
+
+#tags button {
+    border-radius: 0px;
+    color: @color3; 
+}
+
+#tags button.focused {
+    background: @color1;
+}
+
+#workspaces button {
+    color: @color6;
+    padding-left: 1px;
+    padding-right: 9px;
+}
+
+#workspaces button.active {
+    color: @color2;
+    border: 2px solid;
+    border-color: @color2;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#workspaces button:hover {
+    border-color: @color5;
+}
+
+#pulseaudio {
+    color: @color1;
+}
+
+#cava {
+    color: @color3;
+}
+
+#cava.silent {
+    padding: 0;
+    margin: 0;
+}
+
+#memory {
+    color: @color2;
+}
+
+#cpu {
+    color: @color4;
+}
+
+#battery {
+    color: @color5;
+}
+
+#battery.charging {
+    color: green;
+}
+
+#battery.critical {
+    color: red;
+}
+
+#disk {
+    color: @color5;
+}
+
+#network {
+    color: @color6;
+}
+
+#bluetooth {
+    color: @color9;
+    font-size: 1.2rem;
+}
+
+#power-profiles-daemon {
+    padding-left: 1px;
+    padding-right: 11px;
+    color: @color7;
+}
+
+#custom-power {
+    color: @color8;
+    font-size: 1rem;
+    margin-right: 8px;
+    padding-left: 4px
+}
+
+#clock,
+#memory,
+#cpu,
+#battery,
+#diski,
+#network {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#pulseaudio {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#clock.1 {
+    color: @color5;
+}
+
+#clock.2 {
+    color: @color6;
+}
+
+#clock.3 {
+    color: @color7;
+}
+
+#taskbar button {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#taskbar button.active {
+    border: 1px solid @color5;
+}
+
+
+#taskbar button:hover {
+    border: solid 1px @color5;
+}
+
+#mpris {
+    color: @color2;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+#custom-icon {
+    font-size: 1.2rem;
+    color: @color4;
+    padding-right: 6px;
+    padding-left: 4px;
+}
