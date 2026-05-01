@@ -1,0 +1,19 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+configuration {
+    modes: "dmenu";
+    font: "JetBrainsMono Nerd Font 12";
+    location: 0;
+    show-icons: true;
+    case-smart: true;
+    matching: "fuzzy";
+    click-to-exit: true;
+}
+
+window {
+  width: 700px;
+  height: 200px;
+}
+
+mainbox {
+  children: [listview];
+}

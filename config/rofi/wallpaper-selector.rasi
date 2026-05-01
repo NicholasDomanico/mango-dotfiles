@@ -1,0 +1,31 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+configuration {
+    modes: "filebrowser";
+    font: "JetBrainsMono Nerd Font 10";
+    location: 2;
+    show-icons: true;
+    case-smart: true;
+    matching: "fuzzy";
+    click-to-exit: true;
+    filebrowser {
+        directory: "~/Pictures/wallpapers/";
+        command: "/home/nicholas/mango-dots/scripts/mango_random_walpaper.sh";
+  }
+}
+
+window {
+    width: 700px;
+    height: 300px;
+}
+
+listview {
+    columns: 3;
+}
+
+element-icon {
+    size: 3em;
+}
+
+mainbox {
+    children: [listview];
+}
