@@ -1,0 +1,4 @@
+include=~/.cache/wal/colors-mako
+width=300
+height=500
+default-timeout=5000
