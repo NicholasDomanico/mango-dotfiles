@@ -71,6 +71,6 @@ def closest_color(hex_input):
 
 with open("/home/nicholas/.cache/wal/colors") as f:
     pywal_colors = f.readlines()
-    color = pywal_colors[2].strip()
+    color = pywal_colors[10].strip()
 
 print(closest_color(color))
