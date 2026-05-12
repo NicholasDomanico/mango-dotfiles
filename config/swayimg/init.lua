@@ -87,6 +87,12 @@ swayimg.viewer.on_key("e", function()
   os.execute("~/mango-dots/scripts/get_exif.sh " .. image.path)
 end)
 
+swayimg.viewer.on_key("Shift-c", function()
+    local image = swayimg.viewer.get_image()
+    os.execute("kitty --title dirchooser -- ~/mango-dots/scripts/copy_image.sh " .. image.path)
+
+end)
+
 -- bind Escape key for exit
 swayimg.viewer.on_key("Escape", function()
   swayimg.exit()
