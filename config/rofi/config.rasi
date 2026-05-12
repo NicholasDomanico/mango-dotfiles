@@ -173,7 +173,7 @@ configuration {
 
 window { 
 	width: 45%;
-    border: 0;
+    border: 2;
     border-color: @selected-active-background;
     border-radius: 0px;
 	transparency: 50%;

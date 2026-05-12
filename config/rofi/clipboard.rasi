@@ -11,9 +11,12 @@ configuration {
 
 window {
   width: 700px;
-  height: 200px;
+  height: 500px;
+  border: 2;
+  border-color: @selected-active-background;
+
 }
 
 mainbox {
-  children: [listview];
+  children: [inputbar, listview];
 }

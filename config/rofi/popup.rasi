@@ -10,6 +10,8 @@ configuration {
 }
 
 window {
+    border: 2;
+    border-color: @selected-active-background;
 //  width: 500px;
 //  height: 200px;
 }

@@ -9,6 +9,7 @@ configuration {
     click-to-exit: true;
     filebrowser {
         directory: "~/Pictures/wallpapers/";
+        sorting-method: "name";
         command: "/home/nicholas/mango-dots/scripts/mango_random_walpaper.sh";
   }
 }
@@ -16,6 +17,8 @@ configuration {
 window {
     width: 700px;
     height: 300px;
+    border: 2;
+    border-color: @selected-active-background;
 }
 
 listview {
