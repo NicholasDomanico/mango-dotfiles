@@ -4,11 +4,10 @@
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
     padding: 0;
-    margin-right: 3px;
 }
 
 window#waybar {
-    background: @background;
+    background: @color4;
     color: #fdf6e3;
 }
 
@@ -49,40 +48,29 @@ tooltip {
 #cava,
 #network,
 #custom-mediaplayer,
+#custom-icon,
 #image,
+#tags,
 #mpris {
-    margin-bottom: 0px;
-}
-#tags {
     background: @background;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+#tags {
+    margin-right: 4px;
 }
 
 #tags button {
     border-radius: 0px;
-    color: @color3; 
+    color: @color7; 
+    font-weight: bold;
 }
 
 #tags button.focused {
-    background: @color1;
+    background: @color4;
 }
 
-#workspaces button {
-    color: @color6;
-    padding-left: 1px;
-    padding-right: 9px;
-}
-
-#workspaces button.active {
-    color: @color2;
-    border: 2px solid;
-    border-color: @color2;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-}
-
-#workspaces button:hover {
-    border-color: @color5;
-}
 
 #pulseaudio {
     color: @color1;
@@ -90,6 +78,7 @@ tooltip {
 
 #cava {
     color: @color3;
+    padding-right: 6px;
 }
 
 #cava.silent {
@@ -139,8 +128,8 @@ tooltip {
 #custom-power {
     color: @color8;
     font-size: 1rem;
-    margin-right: 8px;
-    padding-left: 4px
+    padding-right: 0px;
+    padding-left: 0px
 }
 
 #clock,
@@ -148,14 +137,9 @@ tooltip {
 #cpu,
 #battery,
 #diski,
-#network {
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
+#network,
 #pulseaudio {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -173,8 +157,8 @@ tooltip {
 }
 
 #taskbar button {
-    margin-left: 4px;
-    margin-right: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #taskbar button.active {
