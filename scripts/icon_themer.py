@@ -6,31 +6,31 @@ import math
 import colorsys
 
 papirus_colors = {
-    "adwaita":   (78, 154, 6),
-    "black":     (0, 0, 0),
-    "blue":      (30, 136, 229),
-    "bluegrey":  (96, 125, 139),
-    "breeze":    (61, 174, 233),
+    "adwaita":   (126, 161, 194),
+    "black":     (78, 78, 79),
+    "blue":      (75, 127, 189),
+    "bluegrey":  (88, 111, 122),
+    "breeze":    (80, 157, 198),
     "brown":     (121, 85, 72),
-    "carmine":   (150, 0, 24),
-    "cyan":      (0, 188, 212),
-    "darkcyan":  (0, 139, 139),
-    "deeporange":(255, 87, 34),
-    "green":     (67, 160, 71),
-    "grey":      (117, 117, 117),
-    "indigo":    (63, 81, 181),
-    "magenta":   (216, 27, 96),
-    "nordic":    (94, 129, 172),
-    "orange":    (251, 140, 0),
-    "palebrown": (161, 136, 127),
-    "paleorange":(255, 183, 77),
-    "pink":      (233, 30, 99),
-    "red":       (229, 57, 53),
-    "teal":      (0, 137, 123),
-    "violet":    (142, 36, 170),
+    "carmine":   (137, 6, 7),
+    "cyan":      (14, 165, 184),
+    "darkcyan":  (64, 145, 154),
+    "deeporange":(200, 93, 55),
+    "green":     (119, 153, 82),
+    "grey":      (126, 126, 125),
+    "indigo":    (81, 92, 159),
+    "magenta":   (176, 104, 193),
+    "nordic":    (111, 136, 161),
+    "orange":    (201, 127, 56),
+    "palebrown": (179, 164, 151),
+    "paleorange":(201, 172, 124),
+    "pink":      (199, 84, 122),
+    "red":       (194, 78, 78),
+    "teal":      (27, 136, 114),
+    "violet":    (113, 81, 167),
     "white":     (255, 255, 255),
-    "yaru":      (233, 84, 32),
-    "yellow":    (253, 216, 53),
+    "yaru":      (127, 99, 89),
+    "yellow":    (210, 162, 50),
 }
 
 def hex_to_rgb(hex):
@@ -71,6 +71,6 @@ def closest_color(hex_input):
 
 with open("/home/nicholas/.cache/wal/colors") as f:
     pywal_colors = f.readlines()
-    color = pywal_colors[10].strip()
+    color = pywal_colors[2].strip()
 
 print(closest_color(color))
