@@ -70,3 +70,7 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
 # Created by `pipx` on 2026-01-20 17:04:56
 export PATH="$PATH:/home/nicholas/.local/bin:/home/nicholas/awww/target/release"
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/nicholas/.local/bin:$PATH"
