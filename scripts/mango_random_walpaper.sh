@@ -22,7 +22,7 @@ if [ -f "$FILE" ]; then
         ~/awww/target/release/awww img $WALLPAPER       
         sleep 1
         wal -i $WALLPAPER -n
-        pgrep waybar | xargs kill && ~/Waybar/build/waybar &
+        #pgrep waybar | xargs kill && ~/Waybar/build/waybar &
         ~/mango-dots/scripts/icon_themer.py | xargs papirus-folders -C
     else
         echo "Given file not an image"
@@ -39,7 +39,7 @@ else
         ~/awww/target/release/awww img $WALLPAPER
         sleep 1
         wal -i $WALLPAPER -n
-        pgrep waybar | xargs kill && ~/Waybar/build/waybar &
+        #pgrep waybar | xargs kill && ~/Waybar/build/waybar &
         ~/mango-dots/scripts/icon_themer.py | xargs papirus-folders -C
     fi
 fi
