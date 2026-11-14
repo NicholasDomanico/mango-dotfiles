@@ -7,24 +7,8 @@
 }
 
 window#waybar {
-    background: @color4;
+    background: @color3;
     color: #fdf6e3;
-}
-
-menu {
-    background: #1a1a1a;
-    color: @color3;
-    border: none;
-}
-
-menuitem {
-    color: @color6;
-}
-
-menuitem:hover {
-    color: @color5;
-    border-color: @color5;
-    background: @background;
 }
 
 tooltip {
@@ -54,23 +38,22 @@ tooltip {
 #mpris {
     background: @background;
     padding-right: 1px;
-    padding-left: 1px;
+    padding-left: 2px;
 }
 
-#tags {
+#workspaces {
     margin-right: 4px;
 }
 
-#tags button {
+#workspaces button {
     border-radius: 0px;
-    color: @color7; 
+    color: #fdf6e3; 
     font-weight: bold;
 }
 
-#tags button.focused {
+#workspaces button.active {
     background: @color4;
 }
-
 
 #pulseaudio {
     color: @color1;
@@ -116,7 +99,7 @@ tooltip {
 
 #bluetooth {
     color: @color9;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #power-profiles-daemon {
@@ -127,21 +110,6 @@ tooltip {
 
 #custom-power {
     color: @color8;
-    font-size: 1rem;
-    padding-right: 0px;
-    padding-left: 0px
-}
-
-#clock,
-#memory,
-#cpu,
-#battery,
-#diski,
-#network,
-#pulseaudio {
-
-    padding-left: 4px;
-    padding-right: 4px;
 }
 
 #clock.1 {
@@ -164,7 +132,6 @@ tooltip {
 #taskbar button.active {
     border: 1px solid @color5;
 }
-
 
 #taskbar button:hover {
     border: solid 1px @color5;

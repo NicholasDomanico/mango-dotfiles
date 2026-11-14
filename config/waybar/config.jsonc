@@ -7,8 +7,9 @@
 
 	"modules-left": [
         "custom/icon",
-		"dwl/tags",
-		"dwl/window"
+        "mango/workspaces",
+		"mango/layout",
+		"mango/window",
 	],
 
 	"modules-center": [
@@ -84,7 +85,7 @@
         },
   "network": {
         "format-wifi": "  |",
-        "format-ethernet": " 	|",
+        "format-ethernet": " |",
         "tooltip-format-wifi": "{essid}\n {ifname} {ipaddr}/{cidr} via {gwaddr} \n Freq: {frequency}GHz, {signaldBm}dBm",
         "tooltip-format-ethernet": "{ifname {ipaddr}/{cidr} via {gwaddr}",
         "format-linked": "{ifname} (No IP)   |",
@@ -94,7 +95,7 @@
     },
   "bluetooth": {
       "format-on": " |",
-      "format-connected": "󰂱 |",
+      "format-connected": "󰂱 {num_connections} |",
       "format-off": "󰂲 |",
       "format-disabled": "󰂲 |",
       "on-click": "kitty --title bluetui -- bluetui",
@@ -113,7 +114,7 @@
   "cava": {
         "framerate": 60,
         "autosens": 1,
-        "bars": 6,
+        "bars": 4,
         "lower_cutoff_freq": 50,
         "higher_cutoff_freq": 10000,
         "sleep-timer": 1,
@@ -147,8 +148,13 @@
     },
 },
 
-"dwl/window": {
+"mango/window": {
+    "format": "{title}",
     "max-length": 30,
+},
+
+"mango/layout": {
+    "format": "({symbol}) "
 },
   
 }
