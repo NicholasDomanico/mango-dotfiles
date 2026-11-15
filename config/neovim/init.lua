@@ -68,3 +68,4 @@ require('nvim-cursorline').setup{
         hl = { underline = true },
     }
 }
+require('mini.surround').setup()

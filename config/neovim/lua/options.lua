@@ -19,3 +19,23 @@ vim.opt.showmatch = true
 
 vim.opt.spell = true
 vim.opt.spelllang = 'en_us'
+
+vim.lsp.config.rust_analyzer = {
+    cmd = { 'rust-analyzer' },
+    filetypes = { 'rust' }
+}
+
+vim.lsp.config.bashls = {
+  cmd = { 'bash-language-server', 'start' },
+  filetypes = { 'bash', 'sh' }
+}
+
+vim.lsp.config.pylsp = {
+    cmd = { 'pylsp' },
+    filetypes = { 'python' }
+}
+
+vim.lsp.enable 'rust_analyzer'
+vim.lsp.enable 'bashls'
+vim.lsp.enable 'pylsp'
+
